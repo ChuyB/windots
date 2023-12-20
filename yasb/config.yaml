@@ -94,7 +94,7 @@ bars:
     widgets:
       left:   ["komorebi_workspaces", "komorebi_active_layout", "active_window"]
       center: []
-      right:  ["wifi", "weather", "clock", "battery"]
+      right:  ["wifi", "clock", "battery"]
 
 # widgets:
   # my-clock-widget:
@@ -438,7 +438,7 @@ widgets:
       label_alt: "\uf0c2 {data[weather][0][description]}"
       class_name: "weather-widget"
       exec_options:
-        run_cmd: "curl.exe https://api.openweathermap.org/data/2.5/weather?lat=10.006793&lon=-69.219888&units=metric&appid=0501c12b881a850e8afe3f314f72d69c"
+        run_cmd: "curl.exe {api url}"
         # run every hour
         run_interval: 3600000
         return_format: "json"
