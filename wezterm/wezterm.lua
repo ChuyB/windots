@@ -14,12 +14,12 @@ end
 
 config.initial_cols = 100
 config.initial_rows = 30
-config.color_scheme = "OneHalfDark"
+config.color_scheme = "OneDark (base16)"
 config.font = wezterm.font("CaskaydiaCove Nerd Font", { weight = "DemiBold" })
 config.font_size = 14.0
 config.default_prog = { "C:\\Program Files\\PowerShell\\7\\pwsh.exe", "--nologo" }
 config.hide_tab_bar_if_only_one_tab = true
-config.window_decorations = "RESIZE"
+--config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.keys = {
 	{
 		key = "r",
