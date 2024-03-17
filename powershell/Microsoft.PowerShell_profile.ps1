@@ -14,6 +14,9 @@ Set-PSReadLineOption -PredictionSource HistoryAndPlugin -PredictionViewStyle Lis
 $ENV:STARSHIP_CONFIG = "C:\Users\jesus\OneDrive\Documentos\PowerShell\starship.toml"
 Invoke-Expression (&starship init powershell)
 
+# Zoxide
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
+
 # Aliases
 function StartTiling {
   komorebic start -c "$Env:USERPROFILE\.config\komorebi.json" --whkd

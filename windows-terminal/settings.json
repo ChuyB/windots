@@ -16,31 +16,33 @@
             "keys": "ctrl+v"
         },
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "keys": "alt+shift+d"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "keys": "ctrl+shift+s"
         },
         {
             "command": "toggleFocusMode",
             "keys": "ctrl+shift+z"
         }
     ],
-    "alwaysShowTabs": false,
+    "alwaysShowTabs": true,
     "autoHideWindow": false,
     "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "initialCols": 110,
-    "initialRows": 35,
+    "defaultProfile": "{aab79973-318f-43b6-a9bc-b4096493753f}",
+    "firstWindowPreference": "defaultProfile",
+    "focusFollowMouse": true,
+    "initialCols": 130,
+    "initialRows": 42,
     "launchMode": "default",
     "newTabMenu": 
     [
@@ -54,17 +56,20 @@
         {
             "bellStyle": "none",
             "closeOnExit": "graceful",
-            "colorScheme": "One Half Dark",
+            "colorScheme": "One Dark Pro",
             "cursorShape": "filledBox",
             "font": 
             {
                 "face": "CaskaydiaCove Nerd Font",
-                "size": 13.5,
-                "weight": "semi-bold"
+                "size": 12.0,
+                "weight": "normal"
             },
-            "opacity": 0,
+            "intenseTextStyle": "bold",
+            "opacity": 100,
+            "padding": "8",
             "scrollbarState": "hidden",
-            "tabTitle": " ",
+            "suppressApplicationTitle": true,
+            "tabTitle": null,
             "useAcrylic": false
         },
         "list": 
@@ -88,18 +93,6 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{25045058-a5bd-5d6a-b40d-c668b93cdda9}",
-                "hidden": true,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{ea3b4189-bf18-5071-8adf-a01ba1886be1}",
-                "hidden": true,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
                 "commandline": "pwsh.exe -nologo",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
@@ -108,22 +101,28 @@
                 "startingDirectory": "%USERPROFILE%"
             },
             {
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "guid": "{13643bef-9a6a-5a8a-becf-58ab656de296}",
                 "hidden": false,
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": true,
-                "name": "Ubuntu",
+                "guid": "{a3956697-b0d1-5977-8bca-2b5e8dc1349b}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+                "hidden": false,
+                "name": "Arch",
                 "source": "Windows.Terminal.Wsl"
             },
             {
-                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
-                "hidden": true,
-                "name": "Visual Studio Debug Console",
-                "source": "VSDebugConsole"
+                "guid": "{aab79973-318f-43b6-a9bc-b4096493753f}",
+                "hidden": false,
+                "name": "Nushell",
+                "source": "nu"
             }
         ]
     },
@@ -176,27 +175,27 @@
             "yellow": "#C19C00"
         },
         {
-            "background": "#282C34",
-            "black": "#3F4451",
-            "blue": "#4AA5F0",
-            "brightBlack": "#4F5666",
-            "brightBlue": "#4DC4FF",
-            "brightCyan": "#4CD1E0",
-            "brightGreen": "#A5E075",
-            "brightPurple": "#DE73FF",
-            "brightRed": "#FF616E",
-            "brightWhite": "#D7DAE0",
-            "brightYellow": "#F0A45D",
-            "cursorColor": "#ABB2BF",
-            "cyan": "#42B3C2",
+            "background": "#181B20",
+            "black": "#282C34",
+            "blue": "#61AFEF",
+            "brightBlack": "#3E4451",
+            "brightBlue": "#8FC6F4",
+            "brightCyan": "#4BCED8",
+            "brightGreen": "#A9D89D",
+            "brightPurple": "#E089E7",
+            "brightRed": "#F38897",
+            "brightWhite": "#C8CDD5",
+            "brightYellow": "#EDD4A6",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#2BBAC5",
             "foreground": "#ABB2BF",
-            "green": "#8CC265",
+            "green": "#89CA78",
             "name": "One Dark Pro",
-            "purple": "#C162DE",
-            "red": "#E05561",
+            "purple": "#D55FDE",
+            "red": "#EF596F",
             "selectionBackground": "#FFFFFF",
-            "white": "#E6E6E6",
-            "yellow": "#D18F52"
+            "white": "#ABB2BF",
+            "yellow": "#E5C07B"
         },
         {
             "background": "#282C34",
@@ -240,32 +239,9 @@
             "name": "One Half Light",
             "purple": "#A626A4",
             "red": "#E45649",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#4F525D",
             "white": "#FAFAFA",
             "yellow": "#C18301"
-        },
-        {
-            "background": "#282A36",
-            "black": "#282A36",
-            "blue": "#57C7FF",
-            "brightBlack": "#686868",
-            "brightBlue": "#57C7FF",
-            "brightCyan": "#9AEDFE",
-            "brightGreen": "#5AF78E",
-            "brightPurple": "#FF6AC1",
-            "brightRed": "#FF5C57",
-            "brightWhite": "#EFF0EB",
-            "brightYellow": "#F3F99D",
-            "cursorColor": "#97979B",
-            "cyan": "#9AEDFE",
-            "foreground": "#EFF0EB",
-            "green": "#5AF78E",
-            "name": "Snazzy",
-            "purple": "#FF6AC1",
-            "red": "#FF5C57",
-            "selectionBackground": "#3E404A",
-            "white": "#F1F1F0",
-            "yellow": "#F3F99D"
         },
         {
             "background": "#002B36",
@@ -309,7 +285,7 @@
             "name": "Solarized Light",
             "purple": "#D33682",
             "red": "#DC322F",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#073642",
             "white": "#EEE8D5",
             "yellow": "#B58900"
         },
@@ -355,32 +331,9 @@
             "name": "Tango Light",
             "purple": "#75507B",
             "red": "#CC0000",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#555753",
             "white": "#D3D7CF",
             "yellow": "#C4A000"
-        },
-        {
-            "background": "#300A24",
-            "black": "#171421",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#08458F",
-            "brightCyan": "#2C9FB3",
-            "brightGreen": "#26A269",
-            "brightPurple": "#A347BA",
-            "brightRed": "#C01C28",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#A2734C",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#FFFFFF",
-            "green": "#26A269",
-            "name": "Ubuntu-ColorScheme",
-            "purple": "#881798",
-            "red": "#C21A23",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#A2734C"
         },
         {
             "background": "#000000",
@@ -406,30 +359,35 @@
             "yellow": "#808000"
         }
     ],
-    "showTabsInTitlebar": false,
-    "theme": "Mica",
+    "showTabsInTitlebar": true,
+    "showTerminalTitleInTitlebar": false,
+    "theme": "Title Bar Mica",
     "themes": 
     [
         {
-            "name": "Mica",
+            "name": "Title Bar Mica",
             "tab": 
             {
-                "background": "#00000000",
+                "background": "terminalBackground",
+                "iconStyle": "default",
                 "showCloseButton": "never",
                 "unfocusedBackground": "#00000000"
             },
             "tabRow": 
             {
-                "background": "#00000000",
+                "background": "terminalBackground",
                 "unfocusedBackground": "#00000000"
             },
             "window": 
             {
-                "applicationTheme": "dark",
-                "useMica": true
+                "applicationTheme": "system",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
             }
         }
     ],
-    "useAcrylicInTabRow": false,
+    "useAcrylicInTabRow": true,
     "windowingBehavior": "useExisting"
 }
