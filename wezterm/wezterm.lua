@@ -191,7 +191,7 @@ wezterm.on("format-tab-title", function(tab, _, _, _, _, max_width)
 
   -- ensure that the titles fit in the available space,
   -- and that we have room for the edges.
-  title = wezterm.truncate_right(title, max_width - 2)
+  title = wezterm.truncate_right(title, max_width - 8)
 
   return {
     { Attribute = { Intensity = textIntensity } },
